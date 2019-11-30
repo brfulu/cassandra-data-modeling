@@ -19,18 +19,17 @@ postgres-data-modeling
 |
 └───event_data                # The dataset partitioned by day
 |   | ...
-|              
-│   
-└───src                      # Source code
+|                 
+└───src                       # Source code
 |   |               
-│   └───notebooks            # Jupyter notebooks
-│   |   │  music_app.ipynb   # Interactive notebook instead of python scripts
+│   └───notebooks             # Jupyter notebooks
+│   |   │  music_app.ipynb    # Interactive notebook instead of python scripts
 |   |   
 |   └───scripts
-|       |  process_events.py # Collect records in one csv file
-│       │  create_tables.py  # Schema creation script
-|       |  etl.py            # ETL script
-|       |  csql_queries.py   # Definition of all csql queries
+|       |  process_events.py  # Collect records in one csv file
+│       │  create_tables.py   # Schema creation script
+|       |  etl.py             # ETL script
+|       |  csql_queries.py    # Definition of all csql queries
 ```
 
 ### Instructions for running locally
@@ -49,7 +48,7 @@ Create python virtual environment
 ```
 python3 -m venv venv             # create virtualenv
 source venv/bin/activate         # activate virtualenv
-pip install -r requirements.txt  # install requirements
+pip install -r requirements.txt  # install requirements (this can take couple of minutes)
 ```
 
 Start cassandra container
