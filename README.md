@@ -58,10 +58,10 @@ docker-compose up  # run this command in new terminal window or tab
 
 Run scripts
 ```
-cd src/scripts/
-python -m process_events # collect events into one csv (event_datafile_new.csv)
-python -m create_tables  # create database schema
-python -m etl            # load data
+cd src/
+python -m scripts.process_events # collect events into one csv (event_datafile_new.csv)
+python -m scripts.create_tables  # create database schema
+python -m scripts.etl            # load data
 ```
 
 Run everything inside jupyter notebook or check results

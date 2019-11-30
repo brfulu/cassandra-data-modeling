@@ -56,7 +56,7 @@ def create_output_file(full_data_rows_list):
 
 def main():
     # get the current folder and subfolder event data
-    filepath = dirname(dirname(os.getcwd())) + '/event_data'
+    filepath = dirname(os.getcwd()) + '/event_data'
 
     file_path_list = collect_files(filepath)
     full_data_rows_list = collect_records(file_path_list)
