@@ -13,24 +13,24 @@ They'd like a data engineer to create a Postgres database with tables designed t
 ### Project structure explanation
 ```
 postgres-data-modeling
-│   README.md                # Project description
-│   docker-compose.yml       # Postgres container description   
-│   requirements.txt         # Python dependencies
+│   README.md                 # Project description
+│   docker-compose.yml        # Postgres container description   
+│   requirements.txt          # Python dependencies
 |
-└───event_data               # The dataset partitioned by day
+└───event_data                # The dataset partitioned by day
 |   | ...
 |              
 │   
-└───src                     # Source code
+└───src                      # Source code
 |   |               
-│   └───notebooks           # Jupyter notebooks
-│   |   │  etl.ipynb        # ETL helper notebook
-|   |   |  test.ipynb       # Psql queries notebook
-|   |   |
+│   └───notebooks            # Jupyter notebooks
+│   |   │  music_app.ipynb   # Interactive notebook instead of python scripts
+|   |   
 |   └───scripts
-│       │  create_tables.py # Schema creation script
-|       |  etl.py           # ETL script
-|       |  sql_queries.py   # Definition of all sql queries
+|       |  process_events.py # Collect records in one csv file
+│       │  create_tables.py  # Schema creation script
+|       |  etl.py            # ETL script
+|       |  csql_queries.py   # Definition of all csql queries
 ```
 
 ### Instructions for running locally
