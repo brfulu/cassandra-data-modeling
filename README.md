@@ -36,7 +36,7 @@ postgres-data-modeling
 
 Clone repository to local machine
 ```
-https://github.com/brfulu/cassandra-data-modeling.git
+git clone https://github.com/brfulu/cassandra-data-modeling.git
 ```
 
 Change directory to local repository
