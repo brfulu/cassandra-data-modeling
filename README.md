@@ -59,17 +59,16 @@ docker-compose up  # run this command in new terminal window or tab
 
 Run scripts
 ```
-cd src/
-python -m scripts.create_tables  # create schema
-python -m scripts.etl            # option 1: load data one file per commit
-python -m scripts.etl_bulk       # option 2: bulk copy for each table
+cd src/scripts/
+python -m process_events # collect events into one csv (event_datafile_new.csv)
+python -m create_tables  # create database schema
+python -m etl            # load data
 ```
 
-Check results
-
+Run everything inside jupyter notebook or check results
 ```
 jupyter notebook  # launch jupyter notebook app
 
 # The notebook interface will appear in a new browser window or tab.
-# Navigate to src/notebooks/test.ipynb and run the code cells
+# Navigate to src/notebooks/music_app.ipynb and run the code cells
 ```
